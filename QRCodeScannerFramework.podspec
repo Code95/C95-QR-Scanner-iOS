@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "QRCodeScannerFramework"
   s.version      = "1.0.0"
-  s.summary      = "A short description of QRCodeScannerFramework."
+  s.summary      = "By far the most QRCodeScanner I have seen in my entire life. No joke."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?

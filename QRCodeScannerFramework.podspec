@@ -81,6 +81,7 @@ This QRCodeScanner changes its color gradually makes your app look fantastic!
   #
 
   s.source       = { :git => "https://github.com/husseinkishk/QRCodeScannerFramework.git", :tag => "#{s.version}" }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -81,9 +81,8 @@ This QRCodeScanner changes its color gradually makes your app look fantastic!
   #
 
   s.source       = { :git => "https://github.com/husseinkishk/QRCodeScannerFramework.git", :tag => "#{s.version}" }
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
-
-
+  #s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.swift_version = '4.0'
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files

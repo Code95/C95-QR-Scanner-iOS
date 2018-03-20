@@ -2,15 +2,8 @@
 A Framework for scanning QR code in iOS using AVFoundation ,
 Written in Swift 4.
 
-## Installation
-
-using CocoaPods
-by cloning the project into your repository
-
-
 ## Installation Using CocoaPods
 
-Podfile example:
 ```
 pod 'QRCodeScannerFramework', :git => 'https://github.com/husseinkishk/QRCodeScannerFramework.git', :tag => '1.0.0'
 ```
@@ -18,31 +11,31 @@ pod 'QRCodeScannerFramework', :git => 'https://github.com/husseinkishk/QRCodeSca
 ## Usage
 
 ### Swift 4
-1- import the framework into the viewcontroller you want to use
+1- import the framework into your ViewController
 ```
 import QRCodeScannerFramework
 ```
-
-2- Create an object for the view you'll use
+2- Now Conform the protocol QrScannerDelegate to get the scanned data like this
+```
+extension ViewController: QrScannerDelegate {
+    func getScannedData(data: String) {
+        print(data) //here's the scan result
+    }
+}
+```
+3- Create an object for the view you'll use
 ```
 let vc = QRScannerController()
 ```
 
-3- In the viewDidLoad method Add this to set the delegate to your viewController
+4- In the viewDidLoad method Add this to set the delegate to your viewController
 ```
 vc.qrScannerDelegate = self
 ```
-4- Add a view controller in your Storyboard and give it class: QRScannerController
+5- Add a view controller in your Storyboard and give it class: QRScannerController
 and module: QRCodeScannerFramework
 
-5- Now Conform the protocol QrScannerDelegate to get the scanned data like this
-```
-extension ViewController: QrScannerDelegate {
-    func getScannedData(data: String) {
-    print(data) //here's the scan result
-    }
-}
-```
+
 
 ## License
 ```

@@ -32,10 +32,12 @@ let vc = QRScannerController()
 ```
 vc.qrScannerDelegate = self
 ```
-5- Add a view controller in your Storyboard and give it class: QRScannerController
-and module: QRCodeScannerFramework
+5- Navigation to QRScannerController
 
+```
+self.navigationController?.pushViewController(vc, animated: true)
 
+```
 
 ## License
 ```

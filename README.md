@@ -11,7 +11,7 @@ pod 'QRCodeScannerFramework', :git => 'https://github.com/husseinkishk/QRCodeSca
 ## Usage
 
 ### Swift 4
-1- import the framework into your ViewController
+1- Import the framework into your ViewController
 ```
 import QRCodeScannerFramework
 ```
@@ -23,7 +23,7 @@ extension ViewController: QrScannerDelegate {
     }
 }
 ```
-3- Create an object for the view you'll use
+3- Create an object in your viewController
 ```
 let vc = QRScannerController()
 ```

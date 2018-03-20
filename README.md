@@ -38,6 +38,11 @@ vc.qrScannerDelegate = self
 self.navigationController?.pushViewController(vc, animated: true)
 
 ```
+6- Add the following key in the info.plist file  to get the camera permission access
+
+```
+Privacy - Camera Usage Description
+```
 
 ## License
 ```

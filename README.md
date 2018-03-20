@@ -1,0 +1,70 @@
+# QRCodeScannerFramework
+A Framework for scanning QR code in iOS using AVFoundation ,
+Written in Swift 4.
+
+## Installation
+
+using CocoaPods
+by cloning the project into your repository
+
+
+## Installation Using CocoaPods
+
+Podfile example:
+```
+pod 'QRCodeScannerFramework', :git => 'https://github.com/husseinkishk/QRCodeScannerFramework.git', :tag => '1.0.0'
+```
+
+## Usage
+
+### Swift 4
+1- import the framework into the viewcontroller you want to use
+```
+import QRCodeScannerFramework
+```
+
+2- Create an object for the view you'll use
+```
+let vc = QRScannerController()
+```
+
+3- In the viewDidLoad method Add this to set the delegate to your viewController
+```
+vc.qrScannerDelegate = self
+```
+4- Add a view controller in your Storyboard and give it class: QRScannerController
+and module: QRCodeScannerFramework
+
+5- Now Conform the protocol QrScannerDelegate to get the scanned data like this
+```
+extension ViewController: QrScannerDelegate {
+    func getScannedData(data: String) {
+    print(data) //here's the scan result
+    }
+}
+```
+
+## License
+```
+Copyright (c) 2018
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+

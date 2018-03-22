@@ -17,7 +17,7 @@ public class QRScannerController: UIViewController, AVCaptureMetadataOutputObjec
 
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
-    var qrCodeFrameView:UIView?
+    public var qrCodeFrameView:UIView?
     let supportedCodeTypes = [AVMetadataObject.ObjectType.qr]
     public var qrScannerDelegate: QrScannerDelegate!
     

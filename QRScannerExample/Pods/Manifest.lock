@@ -1,0 +1,22 @@
+PODS:
+  - QRCodeScannerFramework (0.0.1)
+
+DEPENDENCIES:
+  - QRCodeScannerFramework (from `https://github.com/husseinkishk/QRCodeScannerFramework.git`, tag `1.0.0`)
+
+EXTERNAL SOURCES:
+  QRCodeScannerFramework:
+    :git: https://github.com/husseinkishk/QRCodeScannerFramework.git
+    :tag: 1.0.0
+
+CHECKOUT OPTIONS:
+  QRCodeScannerFramework:
+    :git: https://github.com/husseinkishk/QRCodeScannerFramework.git
+    :tag: 1.0.0
+
+SPEC CHECKSUMS:
+  QRCodeScannerFramework: a00f3fcdc972a177dc3336e7f72b4a80855013d0
+
+PODFILE CHECKSUM: 837267748d3d5cc929d3f8d52aff8cb2adb2746d
+
+COCOAPODS: 1.4.0

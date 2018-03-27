@@ -55,7 +55,7 @@
 		D70D6DAB205E92A400C8C2B4 = {
 			isa = PBXGroup;
 			children = (
-				D70D6DB7205E92A400C8C2B4 /* QRCodeScannerFramework */,
+				D70D6DB7205E92A400C8C2B4 /* C95-QR-Scanner-iOS */,
 				D70D6DC2205E92A400C8C2B4 /* QRCodeScannerFrameworkTests */,
 				D70D6DB6205E92A400C8C2B4 /* Products */,
 			);
@@ -70,14 +70,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D70D6DB7205E92A400C8C2B4 /* QRCodeScannerFramework */ = {
+		D70D6DB7205E92A400C8C2B4 /* C95-QR-Scanner-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				D70D6E14205E972300C8C2B4 /* QRScannerController.swift */,
 				D70D6DB8205E92A400C8C2B4 /* QRCodeScannerFramework.h */,
 				D70D6DB9205E92A400C8C2B4 /* Info.plist */,
 			);
-			path = QRCodeScannerFramework;
+			path = "C95-QR-Scanner-iOS";
 			sourceTree = "<group>";
 		};
 		D70D6DC2205E92A400C8C2B4 /* QRCodeScannerFrameworkTests */ = {
@@ -347,7 +347,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = QRCodeScannerFramework/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/C95-QR-Scanner-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -371,7 +371,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = QRCodeScannerFramework/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/C95-QR-Scanner-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

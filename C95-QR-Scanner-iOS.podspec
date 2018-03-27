@@ -81,7 +81,6 @@ This QRCodeScanner scans the qr code and returns the string scanned!
   #
 
   s.source       = { :git => "https://github.com/Code95/C95-QR-Scanner-iOS.git", :tag => "#{s.version}" }
-  #s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
   s.swift_version = '4.0'
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -91,8 +90,8 @@ This QRCodeScanner scans the qr code and returns the string scanned!
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "QRCodeScannerFramework/*"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "C95-QR-Scanner-iOS/*"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
